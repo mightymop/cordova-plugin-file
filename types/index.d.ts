@@ -44,9 +44,11 @@ interface Window {
 /** This interface represents a file system. */
 interface FileSystem {
     /* The name of the file system, unique across the list of exposed file systems. */
-    name: string;
+    //name: string;
+	readonly name: string; //ANGULAR DECLARATION
     /** The root directory of the file system. */
-    root: DirectoryEntry;
+    //root: DirectoryEntry;
+	readonly root: FileSystemDirectoryEntry; //ANGULAR DECLARATION
 }
 
 /**
